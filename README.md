@@ -36,8 +36,7 @@ Doge Unblocker is a site unblocker powered by [Ultraviolet](https://github.com/t
 </details>
 
 ### Current Developers:
-- [Derpman](https://github.com/derpbyte)
-- [fowntain](https://github.com/fowntain)
+- [Carlos](https://github.com/Galaxy-Developer-CEO)
 ### Deployment
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/template/h7StcI?referralCode=u82tqg)
 <a href="https://render.com/deploy?repo=https://github.com/dogenetwork/doge-unblocker">
