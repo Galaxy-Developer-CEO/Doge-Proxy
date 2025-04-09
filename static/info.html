@@ -24,6 +24,39 @@
   border-radius: 10px;
   transform: translate(-50%);
   text-align: center;
+  display: flex; /* Enable flexbox for image positioning */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-around; /* Distribute space around content */
+  padding: 20px; /* Add some padding around the content */
+}
+
+.image-container {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.left-image {
+  position: absolute;
+  left: 20px; /* Adjust the left margin as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-image {
+  position: absolute;
+  right: 20px; /* Adjust the right margin as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centered-content {
+  text-align: center;
+  width: 100%; /* Allow the text content to take full width within the flex container */
+}
+
+.centered-content h1 {
+  font-size: 68px;
 }
 </style>
 <title>Learn | Salyte</title>
@@ -33,30 +66,34 @@
 <body>
   <div id="contextMenu" class="context-menu themesExcluded" style="--ripple-duration: 300ms;"><div class="context-menu-item with-submenu themesExcluded" id="contextItem" anim="ripple" onclick="toggleSubmenu(event)"><i class="bi bi-file-spreadsheet"></i> Tab Cloak</div><div class="context-submenu themesExcluded" id="contextItem"><div class="context-menu-item themesExcluded" id="contextItem" anim="ripple" onclick="tabCloak()">Enable</div><div class="context-menu-item themesExcluded" anim="ripple" onclick="disableTabCloak()">Disable</div></div><div class="context-menu-item themesExcluded" id="contextItem" onclick="visitSite()"><i class="bi bi-clock-history"></i> Last Visited Site</div><div class="context-menu-item themesExcluded" id="contextItem" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak</div><div class="context-menu-item themesExcluded" id="contextItem" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div></div>
   <div class="centered-div">
-    <h1 style="font-size:68px;">Information</h1>
-    <div class="themesExcluded">
-      <h2>Website</h2>
-      <p>Doge Unblocker (Made By Carlos)</p>
+    <img class="left-image image-container" src="https://cmsv2-assets.apptegy.net/uploads/4863/logo/2135/Cathey_Middle_School.png" alt="Left Image">
+    <div class="centered-content">
+      <h1 style="font-size:68px;">Information</h1>
+      <div class="themesExcluded">
+        <h2>Website</h2>
+        <p>Doge Unblocker (Made By Carlos)</p>
+      </div>
+      <div class="themesExcluded">
+        <h2>Version</h2>
+        <p>V4.4.13</p>
+      </div>
+      <div class="themesExcluded">
+        <h2>Build Info</h2>
+        <p>Stable Build</p>
+      </div>
+      <div class="themesExcluded">
+        <h2>Developers</h2>
+        <p>Carlos CMS (Owner)</p>
+        <p>Fowntain (Dev) - 7zxa (Helper)</p>
+      </div>
+      <div class="themesExcluded">
+        <h2>Link Deployment Info</h2>
+        <p>Self Deployment (GitHub)</p>
+      </div>
+      <a href="https://discord.gg/sWPHCdxCPU" target="new"><i class="bi bi-discord"></i></a>
+      <a href="https://github.com/Galaxy-Developer-CEO/Doge-Proxy" target="new"><i class="bi bi-github"></i></a>
     </div>
-    <div class="themesExcluded">
-      <h2>Version</h2>
-      <p>V4.4.13</p>
-    </div>
-    <div class="themesExcluded">
-      <h2>Build Info</h2>
-      <p>Stable Build</p>
-    </div>
-    <div class="themesExcluded">
-      <h2>Developers</h2>
-      <p>Carlos CMS (Owner)</p>
-      <p>Fowntain (Dev) - 7zxa (Helper)</p>
-    </div>
-    <div class="themesExcluded">
-      <h2>Link Deployment Info</h2>
-      <p>Self Deployment (GitHub)</p>
-    </div>
-    <a href="https://discord.gg/sWPHCdxCPU" target="new"><i class="bi bi-discord"></i></a>
-    <a href="https://github.com/Galaxy-Developer-CEO/Doge-Proxy" target="new"><i class="bi bi-github"></i></a>
+    <img class="right-image image-container" src="https://cmsv2-assets.apptegy.net/uploads/4863/logo/2135/Cathey_Middle_School.png" alt="Right Image">
   </div>
   <div class="footer themesExcluded" style="position:fixed;text-align:right;">
     <a href="/">Back</a>
